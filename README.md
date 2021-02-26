@@ -12,6 +12,13 @@ All You Need Is Python To Run Passifier You Can Download It From The Link Bellow
 
 https://www.python.org/downloads/
 
+## Version 1.1
+
+Added A New Feature Called Advanced Mode
+
+In Advanced Mode You Enter Each Character You Want In Your Password And You
+Will Get Passwords By The Characters You Enter
+
 ## Version 1.0.1
 
 Now You Can Only Type Yes Or No In Question Uppercase, Numbers, Symbols

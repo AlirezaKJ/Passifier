@@ -12,6 +12,41 @@ Developed By github.com/AlirezaKJ/
 
 while True:
     while True:
+        print('''
+Press Enter To Continue Or Type Advanced To Enter Advanced Mode
+    ''')
+        mode = input(" > ")
+        if mode.lower()=="advanced":
+            print('''
+Type Every Character You Want In Your Password
+                ''')
+            tempcharacters=input()
+            tempcharacters=str(tempcharacters)
+            while True:
+                try:
+                    password__length = int(input("Enter Your Password Length : "))
+                    break
+                except ValueError:
+                    print("Wrong Type Please Enter A Number")
+            while True:
+                try:
+                    password__count = int(input("How Many Password Do You Want : "))
+                    print("")
+                    break
+                except ValueError:
+                    print("Wrong Type Please Enter A Number")
+            print("")
+            for x in range(0,password__count):
+                password = ""
+                for x in range(0,password__length):
+                    password_x = random.choice(tempcharacters)
+                    password = password + password_x
+                print(password)
+                print('')
+            print('')
+        else:
+            break
+    while True:
         question = input("Do You Want Uppercase Alphabets In Your Password? ")
         if question.lower() == "yes":
             characters = characters + characters.upper()
@@ -69,6 +104,6 @@ while True:
     if question.lower() == "yes":
         pass
     elif question.lower() == "no":
-        exit()        
+        exit()
     else:
         print(question + " Is Wrong Valid Answers Are yes Or no")
